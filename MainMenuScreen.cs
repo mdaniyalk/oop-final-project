@@ -95,19 +95,19 @@ namespace room_booking_system
         private void RescheduleRes_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBColors.color2);
-            OpenChildForm(new RescheduleResScreen());
+            OpenChildForm(new RescheduleBookScreen());
         }
 
         private void CancelRes_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBColors.color3);
-            OpenChildForm(new CancelResScreen());
+            OpenChildForm(new CancelBookScreen());
         }
 
         private void ViewRes_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBColors.color4);
-            OpenChildForm(new ViewResScreen());
+            OpenChildForm(new ViewBookScreen());
         }
 
         private void Logo_Click(object sender, EventArgs e)

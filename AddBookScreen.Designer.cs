@@ -54,100 +54,109 @@ namespace room_booking_system
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Location = new System.Drawing.Point(24, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 23);
+            this.label1.Size = new System.Drawing.Size(94, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 61);
+            this.label2.Location = new System.Drawing.Point(24, 117);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 23);
+            this.label2.Size = new System.Drawing.Size(154, 30);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Passport Number:";
+            this.label2.Text = "ID Number:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 103);
+            this.label3.Location = new System.Drawing.Point(24, 198);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 23);
+            this.label3.Size = new System.Drawing.Size(94, 30);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Destination:";
+            this.label3.Text = "Room:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 147);
+            this.label4.Location = new System.Drawing.Point(24, 283);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 23);
+            this.label4.Size = new System.Drawing.Size(79, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "Date:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 189);
+            this.label5.Location = new System.Drawing.Point(24, 363);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 23);
+            this.label5.Size = new System.Drawing.Size(83, 30);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Ticket Class:";
+            this.label5.Text = "Time:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 229);
+            this.label6.Location = new System.Drawing.Point(24, 440);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 23);
+            this.label6.Size = new System.Drawing.Size(123, 30);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Ticket Type:";
+            this.label6.Text = "Purpose:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 268);
+            this.label7.Location = new System.Drawing.Point(24, 515);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 23);
+            this.label7.Size = new System.Drawing.Size(245, 30);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Seat Number:";
+            this.label7.Text = "Number of Person:";
             // 
             // textBoxName
             // 
             this.textBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxName.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.Location = new System.Drawing.Point(171, 23);
+            this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxName.Location = new System.Drawing.Point(342, 44);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(404, 24);
+            this.textBoxName.Size = new System.Drawing.Size(804, 32);
             this.textBoxName.TabIndex = 7;
             // 
             // checkBoxClassA
             // 
             this.checkBoxClassA.AutoSize = true;
-            this.checkBoxClassA.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxClassA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxClassA.ForeColor = System.Drawing.Color.White;
-            this.checkBoxClassA.Location = new System.Drawing.Point(3, 0);
+            this.checkBoxClassA.Location = new System.Drawing.Point(6, 0);
+            this.checkBoxClassA.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.checkBoxClassA.Name = "checkBoxClassA";
-            this.checkBoxClassA.Size = new System.Drawing.Size(68, 23);
+            this.checkBoxClassA.Size = new System.Drawing.Size(159, 30);
             this.checkBoxClassA.TabIndex = 8;
-            this.checkBoxClassA.Text = "Class A";
+            this.checkBoxClassA.Text = "08:00-10:00";
             this.checkBoxClassA.UseVisualStyleBackColor = true;
             this.checkBoxClassA.Click += new System.EventHandler(this.checkBoxClassA_Clicked);
             // 
@@ -155,13 +164,14 @@ namespace room_booking_system
             // 
             this.checkBoxClassB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxClassB.AutoSize = true;
-            this.checkBoxClassB.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxClassB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxClassB.ForeColor = System.Drawing.Color.White;
-            this.checkBoxClassB.Location = new System.Drawing.Point(165, 0);
+            this.checkBoxClassB.Location = new System.Drawing.Point(330, 0);
+            this.checkBoxClassB.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.checkBoxClassB.Name = "checkBoxClassB";
-            this.checkBoxClassB.Size = new System.Drawing.Size(68, 23);
+            this.checkBoxClassB.Size = new System.Drawing.Size(159, 30);
             this.checkBoxClassB.TabIndex = 9;
-            this.checkBoxClassB.Text = "Class B";
+            this.checkBoxClassB.Text = "10:15-12:15";
             this.checkBoxClassB.UseVisualStyleBackColor = true;
             this.checkBoxClassB.Click += new System.EventHandler(this.checkBoxClassB_Clicked);
             // 
@@ -169,13 +179,14 @@ namespace room_booking_system
             // 
             this.checkBoxClassC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxClassC.AutoSize = true;
-            this.checkBoxClassC.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxClassC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxClassC.ForeColor = System.Drawing.Color.White;
-            this.checkBoxClassC.Location = new System.Drawing.Point(332, 0);
+            this.checkBoxClassC.Location = new System.Drawing.Point(643, 0);
+            this.checkBoxClassC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.checkBoxClassC.Name = "checkBoxClassC";
-            this.checkBoxClassC.Size = new System.Drawing.Size(69, 23);
+            this.checkBoxClassC.Size = new System.Drawing.Size(159, 30);
             this.checkBoxClassC.TabIndex = 10;
-            this.checkBoxClassC.Text = "Class C";
+            this.checkBoxClassC.Text = "13:00-15:00";
             this.checkBoxClassC.UseVisualStyleBackColor = true;
             this.checkBoxClassC.Click += new System.EventHandler(this.checkBoxClassC_Clicked);
             // 
@@ -186,9 +197,10 @@ namespace room_booking_system
             this.panel1.Controls.Add(this.checkBoxClassA);
             this.panel1.Controls.Add(this.checkBoxClassC);
             this.panel1.Controls.Add(this.checkBoxClassB);
-            this.panel1.Location = new System.Drawing.Point(171, 189);
+            this.panel1.Location = new System.Drawing.Point(342, 363);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(404, 23);
+            this.panel1.Size = new System.Drawing.Size(808, 44);
             this.panel1.TabIndex = 11;
             // 
             // destinationList
@@ -197,10 +209,10 @@ namespace room_booking_system
             | System.Windows.Forms.AnchorStyles.Right)));
             this.destinationList.DropDownHeight = 50;
             this.destinationList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.destinationList.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.destinationList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.destinationList.FormattingEnabled = true;
             this.destinationList.IntegralHeight = false;
-            this.destinationList.ItemHeight = 19;
+            this.destinationList.ItemHeight = 26;
             this.destinationList.Items.AddRange(new object[] {
             "Afghanistan",
             "Albania",
@@ -398,19 +410,21 @@ namespace room_booking_system
             "Yemen",
             "Zambia",
             "Zimbabwe"});
-            this.destinationList.Location = new System.Drawing.Point(172, 103);
+            this.destinationList.Location = new System.Drawing.Point(344, 198);
+            this.destinationList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.destinationList.Name = "destinationList";
-            this.destinationList.Size = new System.Drawing.Size(404, 27);
+            this.destinationList.Size = new System.Drawing.Size(804, 34);
             this.destinationList.TabIndex = 12;
             // 
             // textBoxPassport
             // 
             this.textBoxPassport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxPassport.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassport.Location = new System.Drawing.Point(171, 61);
+            this.textBoxPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassport.Location = new System.Drawing.Point(342, 117);
+            this.textBoxPassport.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.textBoxPassport.Name = "textBoxPassport";
-            this.textBoxPassport.Size = new System.Drawing.Size(404, 24);
+            this.textBoxPassport.Size = new System.Drawing.Size(804, 32);
             this.textBoxPassport.TabIndex = 13;
             // 
             // seatNumber
@@ -419,7 +433,7 @@ namespace room_booking_system
             | System.Windows.Forms.AnchorStyles.Right)));
             this.seatNumber.DropDownHeight = 50;
             this.seatNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.seatNumber.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seatNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seatNumber.FormattingEnabled = true;
             this.seatNumber.IntegralHeight = false;
             this.seatNumber.Items.AddRange(new object[] {
@@ -459,19 +473,21 @@ namespace room_booking_system
             "F4",
             "F5",
             "F6"});
-            this.seatNumber.Location = new System.Drawing.Point(172, 264);
+            this.seatNumber.Location = new System.Drawing.Point(344, 508);
+            this.seatNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.seatNumber.Name = "seatNumber";
-            this.seatNumber.Size = new System.Drawing.Size(404, 27);
+            this.seatNumber.Size = new System.Drawing.Size(804, 34);
             this.seatNumber.TabIndex = 15;
             // 
             // datePicker
             // 
             this.datePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.datePicker.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datePicker.Location = new System.Drawing.Point(171, 147);
+            this.datePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datePicker.Location = new System.Drawing.Point(342, 283);
+            this.datePicker.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.datePicker.Name = "datePicker";
-            this.datePicker.Size = new System.Drawing.Size(405, 24);
+            this.datePicker.Size = new System.Drawing.Size(806, 32);
             this.datePicker.TabIndex = 16;
             // 
             // ticketType
@@ -480,15 +496,16 @@ namespace room_booking_system
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ticketType.DropDownHeight = 50;
             this.ticketType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ticketType.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ticketType.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ticketType.FormattingEnabled = true;
             this.ticketType.IntegralHeight = false;
             this.ticketType.Items.AddRange(new object[] {
             "One Way",
             "Two Way"});
-            this.ticketType.Location = new System.Drawing.Point(172, 225);
+            this.ticketType.Location = new System.Drawing.Point(344, 433);
+            this.ticketType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ticketType.Name = "ticketType";
-            this.ticketType.Size = new System.Drawing.Size(404, 27);
+            this.ticketType.Size = new System.Drawing.Size(804, 34);
             this.ticketType.TabIndex = 17;
             // 
             // submitButton
@@ -498,22 +515,23 @@ namespace room_booking_system
             this.submitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(120)))));
             this.submitButton.FlatAppearance.BorderSize = 0;
             this.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.submitButton.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitButton.ForeColor = System.Drawing.Color.White;
-            this.submitButton.Location = new System.Drawing.Point(16, 309);
+            this.submitButton.Location = new System.Drawing.Point(32, 594);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(560, 35);
+            this.submitButton.Size = new System.Drawing.Size(1120, 67);
             this.submitButton.TabIndex = 18;
-            this.submitButton.Text = "Submit Reservation";
+            this.submitButton.Text = "Submit Booking";
             this.submitButton.UseVisualStyleBackColor = false;
             this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
-            // AddResScreen
+            // AddBookScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(601, 351);
+            this.ClientSize = new System.Drawing.Size(1202, 675);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.ticketType);
             this.Controls.Add(this.datePicker);
@@ -530,7 +548,8 @@ namespace room_booking_system
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AddResScreen";
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "AddBookScreen";
             this.Text = "Add Reservation";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

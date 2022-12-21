@@ -93,7 +93,7 @@ namespace room_booking_system
         private void ViewRes_Click(object sender, EventArgs e)
         {
             ActivateBtn(sender, RGBColors.color2);
-            OpenChildForm(new ViewResScreen());
+            OpenChildForm(new ViewBookScreen());
         }
 
         private void Logo_Click(object sender, EventArgs e)
