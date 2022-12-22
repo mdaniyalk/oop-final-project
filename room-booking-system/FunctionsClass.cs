@@ -1,67 +1,133 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Net.Http;
+using System.Security.Policy;
+using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+//using Newtonsoft.Json;
+
 
 namespace room_booking_system
 {
     class FunctionsClass
     {
-        public string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sayur\Documents\GitHub\airline-reservation-system\Database\ReservationDb.mdf;Integrated Security=True;Connect Timeout=30";
-
-        public int checkSeatTaken(string rDate, string sNum)
+        // public string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sayur\Documents\GitHub\airline-reservation-system\Database\ReservationDb.mdf;Integrated Security=True;Connect Timeout=30";
+        public string apiUrl = "http://localhost:7260";
+        
+        public async Task<string> listRoom(string id)
         {
-            SqlConnection connection = new SqlConnection(connectionString);
-            string query = "SELECT COUNT(*) FROM ReservationTable WHERE Date= '" + rDate + "' AND SeatNumber= '" + sNum + "'";
-            SqlCommand command = new SqlCommand(query, connection);
-            connection.Open();
-            int reservationExist = (int)command.ExecuteScalar();
+            var client = new HttpClient();
 
-            if (reservationExist > 0)
-            {
-                return 0;
-            }
-            else
-            {
-                return 1;
-            }
+            var result = await client.GetStringAsync(apiUrl + "/Ruang/ListKetersediaan");
+
+            Room roomList = JsonSerializer.Deserialize<Room>(result);
+            return roomList.room;
+
         }
 
-        public int checkUserTaken(string uName)
+        public async Task<int> checkRoomTaken(string date, string roomName, string time)
         {
-            SqlConnection connection = new SqlConnection(connectionString);
-            string query = "SELECT COUNT(*) FROM UserTable WHERE Username= '" + uName + "'";
-            SqlCommand command = new SqlCommand(query, connection);
+            var client = new HttpClient();
 
-            connection.Open();
-            int reservationExist = (int)command.ExecuteScalar();
-            connection.Close();
+            var result = await client.GetStringAsync(apiUrl + "/Ruang/Ketersediaan/tanggal=" + date + "&ruang=" + roomName);
 
-            if (reservationExist > 0)
+            Room roomStatus = JsonSerializer.Deserialize<Room>(result);
+
+            if (time == "00")
             {
-                return 0;
+                if (roomStatus._00 == "1")
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 1;
+                }
             }
-            else
+            else if (time == "01")
             {
-                return 1;
+                if (roomStatus._01 == "1")
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 1;
+                }
             }
-        }
-
-        public int validateLogin(string uName, string pass)
-        {
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlCommand command = new SqlCommand("SELECT * FROM UserTable WHERE Username LIKE '"+uName+"' AND Password = '"+pass+"'");
+            else if (time == "02")
+            {
+                if (roomStatus._02 == "1")
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 1;
+                }
+            }
             
-            command.Connection = connection;
-            connection.Open();
+        }
 
-            DataSet dataSet = new DataSet();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(dataSet);
-            connection.Close();
+        public async Task<int> checkUserTakenAsync(string uName)
+        {
+            var client = new HttpClient();
 
-            bool loginSuccess = ((dataSet.Tables.Count > 0) && (dataSet.Tables[0].Rows.Count > 0));
+            var result = await client.GetAsync(apiUrl+"/Users/"+uName);
+            //Console.WriteLine(result.StatusCode);
 
-            if (loginSuccess)
+
+            if (result.IsSuccessStatusCode)
+            {
+                return 0;
+            }
+            else
+            {
+                return 1;
+            }
+        }
+
+        public async Task<int> newUser(string name, string idNum, string uName, string password)
+        {
+            var client = new HttpClient();
+            string email = uName + "@mail.ugm.ac.id";
+            var data = new Dictionary<string, string>
+            {
+                {"username", uName},
+                {"password", password},
+                {"email", email},
+                {"fullname", name},
+                {"nim", idNum}
+            };
+
+            var result = await client.PostAsync(apiUrl, new FormUrlEncodedContent(data));
+
+            var content = await result.Content.ReadAsStringAsync();
+            //Console.WriteLine(content);
+            result.EnsureSuccessStatusCode();
+
+            if (result.IsSuccessStatusCode)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        public async Task<int> validateLogin(string uName, string pass)
+        {
+            var client = new HttpClient();
+
+            var result = await client.GetAsync(apiUrl + "/auth/Login/username=" + uName +"&password=" + pass);
+            //Console.WriteLine(result.StatusCode);
+
+
+            if (result.IsSuccessStatusCode)
             {
                 return 1;
             }

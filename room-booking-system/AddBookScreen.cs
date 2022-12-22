@@ -55,7 +55,7 @@ namespace room_booking_system
 
                 FunctionsClass functions = new FunctionsClass();
 
-                if(functions.checkSeatTaken(date, sNumber) == 0)
+                if(functions.checkSRoomTaken(date, sNumber) == 0)
                 {
                     new PopupMessage("Sorry, The expected seat is already reserved on that day!").ShowDialog();
                 }

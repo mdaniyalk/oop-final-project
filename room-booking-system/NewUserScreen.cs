@@ -14,15 +14,15 @@ namespace room_booking_system
         private void registerButton_Click(object sender, EventArgs e)
         {
             string name = textBoxName.Text;
-            string passportNum = textBoxPassport.Text;
+            string idNum = textBoxid.Text;
             string uname = textBoxUsername.Text;
             string password = textBoxPassword.Text;
 
-            if (name != "" && passportNum != "" && uname != "" && password != "")
+            if (name != "" && idNum != "" && uname != "" && password != "")
             {
                 FunctionsClass functions = new FunctionsClass();
 
-                if (functions.checkUserTaken(uname) == 0)
+                if (functions.checkUserTakenAsync(uname) == 0)
                 {
                     new PopupMessage("Sorry, The username is already taken!").ShowDialog();
                 }
@@ -31,7 +31,7 @@ namespace room_booking_system
                     try
                     {
                         SqlConnection connection = new SqlConnection(functions.connectionString);
-                        string query = "INSERT INTO UserTable (Name, PassportNumber, Username, Password) VALUES ('" + name + "','" + passportNum + "','" + uname + "','" + password + "')";
+                        string query = "INSERT INTO UserTable (Name, idNumber, Username, Password) VALUES ('" + name + "','" + idNum + "','" + uname + "','" + password + "')";
                         SqlCommand command = new SqlCommand(query, connection);
                         connection.Open();
                         command.ExecuteNonQuery();
@@ -45,7 +45,7 @@ namespace room_booking_system
                     finally
                     {
                         textBoxName.Text = "";
-                        textBoxPassport.Text = "";
+                        textBoxid.Text = "";
                         textBoxUsername.Text = "";
                         textBoxPassword.Text = "";
                     }
