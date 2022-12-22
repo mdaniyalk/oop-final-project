@@ -37,14 +37,12 @@ namespace room_booking_system
             this.RescheduleRes = new FontAwesome.Sharp.IconButton();
             this.AddRes = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.panelTitleBox = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.MenuPanel.SuspendLayout();
@@ -67,7 +65,7 @@ namespace room_booking_system
             this.MenuPanel.Controls.Add(this.panel2);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
-            this.MenuPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MenuPanel.Margin = new System.Windows.Forms.Padding(6);
             this.MenuPanel.Name = "MenuPanel";
             this.MenuPanel.Size = new System.Drawing.Size(520, 883);
             this.MenuPanel.TabIndex = 0;
@@ -85,7 +83,7 @@ namespace room_booking_system
             this.LogOut.IconSize = 25;
             this.LogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogOut.Location = new System.Drawing.Point(0, 748);
-            this.LogOut.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.LogOut.Margin = new System.Windows.Forms.Padding(6);
             this.LogOut.Name = "LogOut";
             this.LogOut.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
             this.LogOut.Size = new System.Drawing.Size(520, 135);
@@ -109,7 +107,7 @@ namespace room_booking_system
             this.ViewRes.IconSize = 25;
             this.ViewRes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ViewRes.Location = new System.Drawing.Point(0, 597);
-            this.ViewRes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ViewRes.Margin = new System.Windows.Forms.Padding(6);
             this.ViewRes.Name = "ViewRes";
             this.ViewRes.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
             this.ViewRes.Size = new System.Drawing.Size(520, 135);
@@ -133,7 +131,7 @@ namespace room_booking_system
             this.CancelRes.IconSize = 25;
             this.CancelRes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CancelRes.Location = new System.Drawing.Point(0, 462);
-            this.CancelRes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CancelRes.Margin = new System.Windows.Forms.Padding(6);
             this.CancelRes.Name = "CancelRes";
             this.CancelRes.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
             this.CancelRes.Size = new System.Drawing.Size(520, 135);
@@ -157,7 +155,7 @@ namespace room_booking_system
             this.RescheduleRes.IconSize = 25;
             this.RescheduleRes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RescheduleRes.Location = new System.Drawing.Point(0, 327);
-            this.RescheduleRes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.RescheduleRes.Margin = new System.Windows.Forms.Padding(6);
             this.RescheduleRes.Name = "RescheduleRes";
             this.RescheduleRes.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
             this.RescheduleRes.Size = new System.Drawing.Size(520, 135);
@@ -181,7 +179,7 @@ namespace room_booking_system
             this.AddRes.IconSize = 25;
             this.AddRes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddRes.Location = new System.Drawing.Point(0, 192);
-            this.AddRes.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.AddRes.Margin = new System.Windows.Forms.Padding(6);
             this.AddRes.Name = "AddRes";
             this.AddRes.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
             this.AddRes.Size = new System.Drawing.Size(520, 135);
@@ -194,33 +192,21 @@ namespace room_booking_system
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.Logo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(520, 192);
             this.panel2.TabIndex = 0;
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(203, 132);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 29);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "DTETI";
-            // 
             // Logo
             // 
             this.Logo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Logo.Image = global::airline_reservation_system.Properties.Resources.logo_dteti;
             this.Logo.Location = new System.Drawing.Point(100, 23);
-            this.Logo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Logo.Margin = new System.Windows.Forms.Padding(6);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(280, 129);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -230,12 +216,12 @@ namespace room_booking_system
             // 
             // panelTitleBox
             // 
-            this.panelTitleBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelTitleBox.BackColor = System.Drawing.Color.White;
             this.panelTitleBox.Controls.Add(this.lblTitle);
             this.panelTitleBox.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBox.Location = new System.Drawing.Point(520, 0);
-            this.panelTitleBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelTitleBox.Margin = new System.Windows.Forms.Padding(6);
             this.panelTitleBox.Name = "panelTitleBox";
             this.panelTitleBox.Size = new System.Drawing.Size(1234, 115);
             this.panelTitleBox.TabIndex = 1;
@@ -244,7 +230,7 @@ namespace room_booking_system
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(152, 48);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTitle.Name = "lblTitle";
@@ -254,13 +240,14 @@ namespace room_booking_system
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.White;
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Black;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.White;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.Black;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm.IconSize = 71;
             this.iconCurrentChildForm.Location = new System.Drawing.Point(56, 48);
-            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(6);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(84, 71);
             this.iconCurrentChildForm.TabIndex = 0;
@@ -268,47 +255,34 @@ namespace room_booking_system
             // 
             // panelShadow
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(100)))));
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(520, 115);
-            this.panelShadow.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelShadow.Margin = new System.Windows.Forms.Padding(6);
             this.panelShadow.Name = "panelShadow";
             this.panelShadow.Size = new System.Drawing.Size(1234, 17);
             this.panelShadow.TabIndex = 2;
             // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelChildForm.Controls.Add(this.label4);
+            this.panelChildForm.BackColor = System.Drawing.Color.Gainsboro;
             this.panelChildForm.Controls.Add(this.pictureBox1);
             this.panelChildForm.Controls.Add(this.label1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(520, 132);
-            this.panelChildForm.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panelChildForm.Margin = new System.Windows.Forms.Padding(6);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(1234, 751);
             this.panelChildForm.TabIndex = 3;
             // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(564, 559);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 29);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "DTETI";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(370, 271);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Image = global::airline_reservation_system.Properties.Resources.logo_dteti;
+            this.pictureBox1.Location = new System.Drawing.Point(493, 295);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 292);
+            this.pictureBox1.Size = new System.Drawing.Size(361, 194);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -318,8 +292,8 @@ namespace room_booking_system
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(190, 194);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(299, 195);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(705, 48);
@@ -330,20 +304,19 @@ namespace room_booking_system
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(178)))), ((int)(((byte)(235)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(117)))));
             this.ClientSize = new System.Drawing.Size(1754, 883);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBox);
             this.Controls.Add(this.MenuPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "MainMenuScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Airline Booking System";
+            this.Text = "DTETI Room Booking System";
             this.MenuPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.panelTitleBox.ResumeLayout(false);
             this.panelTitleBox.PerformLayout();
@@ -370,8 +343,6 @@ namespace room_booking_system
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelChildForm;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
     }

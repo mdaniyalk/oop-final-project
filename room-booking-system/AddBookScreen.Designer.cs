@@ -55,7 +55,7 @@ namespace room_booking_system
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(24, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
@@ -67,7 +67,7 @@ namespace room_booking_system
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(24, 117);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
@@ -79,7 +79,7 @@ namespace room_booking_system
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(24, 198);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
@@ -91,7 +91,7 @@ namespace room_booking_system
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(24, 283);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
@@ -103,7 +103,7 @@ namespace room_booking_system
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(24, 363);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
@@ -115,7 +115,7 @@ namespace room_booking_system
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(24, 440);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
@@ -127,7 +127,7 @@ namespace room_booking_system
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(24, 515);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
@@ -141,7 +141,7 @@ namespace room_booking_system
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxName.Location = new System.Drawing.Point(342, 44);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(804, 32);
             this.textBoxName.TabIndex = 7;
@@ -150,9 +150,9 @@ namespace room_booking_system
             // 
             this.checkBoxClassA.AutoSize = true;
             this.checkBoxClassA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxClassA.ForeColor = System.Drawing.Color.White;
+            this.checkBoxClassA.ForeColor = System.Drawing.Color.Black;
             this.checkBoxClassA.Location = new System.Drawing.Point(6, 0);
-            this.checkBoxClassA.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkBoxClassA.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxClassA.Name = "checkBoxClassA";
             this.checkBoxClassA.Size = new System.Drawing.Size(159, 30);
             this.checkBoxClassA.TabIndex = 8;
@@ -165,9 +165,9 @@ namespace room_booking_system
             this.checkBoxClassB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBoxClassB.AutoSize = true;
             this.checkBoxClassB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxClassB.ForeColor = System.Drawing.Color.White;
+            this.checkBoxClassB.ForeColor = System.Drawing.Color.Black;
             this.checkBoxClassB.Location = new System.Drawing.Point(330, 0);
-            this.checkBoxClassB.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkBoxClassB.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxClassB.Name = "checkBoxClassB";
             this.checkBoxClassB.Size = new System.Drawing.Size(159, 30);
             this.checkBoxClassB.TabIndex = 9;
@@ -180,9 +180,9 @@ namespace room_booking_system
             this.checkBoxClassC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxClassC.AutoSize = true;
             this.checkBoxClassC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxClassC.ForeColor = System.Drawing.Color.White;
+            this.checkBoxClassC.ForeColor = System.Drawing.Color.Black;
             this.checkBoxClassC.Location = new System.Drawing.Point(643, 0);
-            this.checkBoxClassC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.checkBoxClassC.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxClassC.Name = "checkBoxClassC";
             this.checkBoxClassC.Size = new System.Drawing.Size(159, 30);
             this.checkBoxClassC.TabIndex = 10;
@@ -198,7 +198,7 @@ namespace room_booking_system
             this.panel1.Controls.Add(this.checkBoxClassC);
             this.panel1.Controls.Add(this.checkBoxClassB);
             this.panel1.Location = new System.Drawing.Point(342, 363);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(808, 44);
             this.panel1.TabIndex = 11;
@@ -411,7 +411,7 @@ namespace room_booking_system
             "Zambia",
             "Zimbabwe"});
             this.destinationList.Location = new System.Drawing.Point(344, 198);
-            this.destinationList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.destinationList.Margin = new System.Windows.Forms.Padding(6);
             this.destinationList.Name = "destinationList";
             this.destinationList.Size = new System.Drawing.Size(804, 34);
             this.destinationList.TabIndex = 12;
@@ -422,7 +422,7 @@ namespace room_booking_system
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassport.Location = new System.Drawing.Point(342, 117);
-            this.textBoxPassport.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBoxPassport.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxPassport.Name = "textBoxPassport";
             this.textBoxPassport.Size = new System.Drawing.Size(804, 32);
             this.textBoxPassport.TabIndex = 13;
@@ -474,7 +474,7 @@ namespace room_booking_system
             "F5",
             "F6"});
             this.seatNumber.Location = new System.Drawing.Point(344, 508);
-            this.seatNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.seatNumber.Margin = new System.Windows.Forms.Padding(6);
             this.seatNumber.Name = "seatNumber";
             this.seatNumber.Size = new System.Drawing.Size(804, 34);
             this.seatNumber.TabIndex = 15;
@@ -485,7 +485,7 @@ namespace room_booking_system
             | System.Windows.Forms.AnchorStyles.Right)));
             this.datePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePicker.Location = new System.Drawing.Point(342, 283);
-            this.datePicker.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.datePicker.Margin = new System.Windows.Forms.Padding(6);
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(806, 32);
             this.datePicker.TabIndex = 16;
@@ -503,7 +503,7 @@ namespace room_booking_system
             "One Way",
             "Two Way"});
             this.ticketType.Location = new System.Drawing.Point(344, 433);
-            this.ticketType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ticketType.Margin = new System.Windows.Forms.Padding(6);
             this.ticketType.Name = "ticketType";
             this.ticketType.Size = new System.Drawing.Size(804, 34);
             this.ticketType.TabIndex = 17;
@@ -512,13 +512,13 @@ namespace room_booking_system
             // 
             this.submitButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.submitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(120)))));
+            this.submitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.submitButton.FlatAppearance.BorderSize = 0;
             this.submitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitButton.ForeColor = System.Drawing.Color.White;
             this.submitButton.Location = new System.Drawing.Point(32, 594);
-            this.submitButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(6);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(1120, 67);
             this.submitButton.TabIndex = 18;
@@ -530,7 +530,7 @@ namespace room_booking_system
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1202, 675);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.ticketType);
@@ -548,9 +548,9 @@ namespace room_booking_system
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AddBookScreen";
-            this.Text = "Add Reservation";
+            this.Text = "Add Booking";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
