@@ -1,0 +1,6 @@
+[submodule "room-booking-system"]
+	path = room-booking-system
+	url = https://github.com/mdaniyalk/room-booking-system.git
+[submodule "RuangAPI"]
+	path = RuangAPI
+	url = https://github.com/Harmerz/RuangAPI.git
