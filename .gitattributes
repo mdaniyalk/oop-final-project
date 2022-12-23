@@ -1,6 +1,6 @@
 room-booking-system/** linguist-documentation=false
 room-booking-system/** linguist-vendored=false
-room-booking-system/** linguist-detectable
-room-booking-systemTest/* linguist-documentation=false
-room-booking-systemTest/* linguist-vendored=false
-room-booking-systemTest/** linguist-detectable
+room-booking-system/** linguist-detectable=true
+room-booking-systemTest/** linguist-documentation=false
+room-booking-systemTest/** linguist-vendored=false
+room-booking-systemTest/** linguist-detectable=true
