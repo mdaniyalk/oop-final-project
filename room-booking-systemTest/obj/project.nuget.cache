@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HtQjJkUFheZkPfG2NqftIT/w65RJr/KPk6esn+bkzgRcLOqt6OG/JK2/3gpKeZgytGYSoqO3nPFDeGda8vUNQw==",
+  "dgSpecHash": "vDSQPnN6Q8eDcuvxB1enKXO8b3xMbLH9AH9H/hyiwyJh2DAOnsnOI+6NYsomQ43ghv25xSejh2uHoSnI25W5Dg==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
+  "projectFilePath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\daniyalkautsar\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\daniyalkautsar\\.nuget\\packages\\microsoft.codecoverage\\17.2.0\\microsoft.codecoverage.17.2.0.nupkg.sha512",
@@ -101,7 +101,8 @@
     "C:\\Users\\daniyalkautsar\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\daniyalkautsar\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\daniyalkautsar\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\daniyalkautsar\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\daniyalkautsar\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\daniyalkautsar\\.nuget\\packages\\roombookingsystem\\1.0.0\\roombookingsystem.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = room_booking_systemTest
+build_property.RootNamespace = RoomBookingSystemTest
 build_property.ProjectDir = \\Mac\Home\Documents\github\work\room-booking-system\room-booking-systemTest\

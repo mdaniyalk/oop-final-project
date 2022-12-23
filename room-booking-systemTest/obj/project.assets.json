@@ -1963,13 +1963,13 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "room-booking-system/1.0.0": {
+      "RoomBookingSystem/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/room-booking-system.dll": {}
+          "bin/placeholder/RoomBookingSystem.dll": {}
         },
         "runtime": {
-          "bin/placeholder/room-booking-system.dll": {}
+          "bin/placeholder/RoomBookingSystem.dll": {}
         }
       }
     }
@@ -6961,10 +6961,10 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "room-booking-system/1.0.0": {
+    "RoomBookingSystem/1.0.0": {
       "type": "project",
-      "path": "../room-booking-system/room-booking-system.csproj",
-      "msbuildProject": "../room-booking-system/room-booking-system.csproj"
+      "path": "../room-booking-system/RoomBookingSystem.csproj",
+      "msbuildProject": "../room-booking-system/RoomBookingSystem.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6972,9 +6972,9 @@
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.2.0",
+      "RoomBookingSystem >= 1.0.0",
       "System.Text.Json >= 7.0.1",
-      "coverlet.collector >= 3.1.2",
-      "room-booking-system >= 1.0.0"
+      "coverlet.collector >= 3.1.2"
     ]
   },
   "packageFolders": {
@@ -6984,11 +6984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
+      "projectUniqueName": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
       "projectName": "room-booking-systemTest",
-      "projectPath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
+      "projectPath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
       "packagesPath": "C:\\Users\\daniyalkautsar\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\obj\\",
+      "outputPath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7009,8 +7009,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-system\\room-booking-system.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-system\\room-booking-system.csproj"
+            "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-system\\RoomBookingSystem.csproj": {
+              "projectPath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-system\\RoomBookingSystem.csproj"
             }
           }
         }

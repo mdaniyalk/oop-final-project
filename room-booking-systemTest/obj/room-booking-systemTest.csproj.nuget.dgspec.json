@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj": {}
+    "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj": {
+    "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
+        "projectUniqueName": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
         "projectName": "room-booking-systemTest",
-        "projectPath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
+        "projectPath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\room-booking-systemTest.csproj",
         "packagesPath": "C:\\Users\\daniyalkautsar\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\obj\\",
+        "outputPath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-systemTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-system\\room-booking-system.csproj": {
-                "projectPath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-system\\room-booking-system.csproj"
+              "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-system\\RoomBookingSystem.csproj": {
+                "projectPath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-system\\RoomBookingSystem.csproj"
               }
             }
           }
@@ -89,11 +89,11 @@
         }
       }
     },
-    "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-system\\room-booking-system.csproj": {
+    "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-system\\RoomBookingSystem.csproj": {
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-system\\room-booking-system.csproj",
-        "projectName": "room-booking-system",
-        "projectPath": "\\\\Mac\\Home\\Documents\\github\\work\\room-booking-system\\room-booking-system\\room-booking-system.csproj",
+        "projectUniqueName": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-system\\RoomBookingSystem.csproj",
+        "projectName": "RoomBookingSystem",
+        "projectPath": "Z:\\Documents\\github\\work\\room-booking-system\\room-booking-system\\RoomBookingSystem.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
