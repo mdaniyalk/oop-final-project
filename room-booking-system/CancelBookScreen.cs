@@ -19,17 +19,17 @@ namespace room_booking_system
             }
             else
             {
-                if(textBoxRID.Text != "" && textBoxPassport.Text != "")
+                if(textBoxBookId.Text != "" && textBoxIdNumber.Text != "")
                 {
-                    int reservationId = int.Parse(textBoxRID.Text);
-                    int passportId = int.Parse(textBoxPassport.Text);
+                    int reservationId = int.Parse(textBoxBookId.Text);
+                    int IdNumberId = int.Parse(textBoxIdNumber.Text);
 
                     FunctionsClass functions = new FunctionsClass();
 
                     try
                     {
                         SqlConnection connection = new SqlConnection(functions.connectionString);
-                        string query = @"DELETE FROM ReservationTable WHERE (ReservationID= '" + reservationId + "' AND PassportID= '" + passportId + "')";
+                        string query = @"DELETE FROM ReservationTable WHERE (ReservationID= '" + reservationId + "' AND IdNumberID= '" + IdNumberId + "')";
                         SqlCommand command = new SqlCommand(query, connection);
                         connection.Open();
                         command.ExecuteNonQuery();
@@ -42,8 +42,8 @@ namespace room_booking_system
                     }
                     finally
                     {
-                        textBoxRID.Text = "";
-                        textBoxPassport.Text = "";
+                        textBoxBookId.Text = "";
+                        textBoxIdNumber.Text = "";
                         checkBoxAgree.CheckState = CheckState.Unchecked;
                     }
                 }

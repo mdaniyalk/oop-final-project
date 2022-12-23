@@ -40,9 +40,9 @@ namespace room_booking_system
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            if (textBoxPassport.Text != "")
+            if (textBoxIdRoom.Text != "")
             {
-                int pNumber = int.Parse(textBoxPassport.Text);
+                int pNumber = int.Parse(textBoxIdRoom.Text);
 
                 FunctionsClass functions = new FunctionsClass();
 
@@ -51,7 +51,7 @@ namespace room_booking_system
                     SqlConnection connection = new SqlConnection(functions.connectionString);
                     connection.Open();
 
-                    string query2 = "SELECT * FROM ReservationTable WHERE PassportID='" + pNumber + "'";
+                    string query2 = "SELECT * FROM ReservationTable WHERE IdRoomID='" + pNumber + "'";
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(query2, connection);
 
                     DataSet dataSet = new DataSet();
@@ -67,12 +67,12 @@ namespace room_booking_system
                 }
                 finally
                 {
-                    textBoxPassport.Text = "";
+                    textBoxIdRoom.Text = "";
                 }
             }
             else
             {
-                new PopupMessage("Enter passport number!").ShowDialog();
+                new PopupMessage("Enter IdRoom number!").ShowDialog();
             }
         }
 

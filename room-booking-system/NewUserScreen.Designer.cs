@@ -39,7 +39,7 @@ namespace room_booking_system
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.registerButton = new System.Windows.Forms.Button();
-            this.textBoxPassport = new System.Windows.Forms.TextBox();
+            this.textBoxIdNumber = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,7 +92,7 @@ namespace room_booking_system
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.textBoxUsername);
             this.panel4.Controls.Add(this.registerButton);
-            this.panel4.Controls.Add(this.textBoxPassport);
+            this.panel4.Controls.Add(this.textBoxIdNumber);
             this.panel4.Controls.Add(this.textBoxName);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
@@ -170,16 +170,16 @@ namespace room_booking_system
             this.registerButton.UseVisualStyleBackColor = false;
             this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
             // 
-            // textBoxPassport
+            // textBoxIdNumber
             // 
-            this.textBoxPassport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxIdNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassport.Location = new System.Drawing.Point(346, 266);
-            this.textBoxPassport.Margin = new System.Windows.Forms.Padding(6);
-            this.textBoxPassport.Name = "textBoxPassport";
-            this.textBoxPassport.Size = new System.Drawing.Size(804, 32);
-            this.textBoxPassport.TabIndex = 39;
+            this.textBoxIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIdNumber.Location = new System.Drawing.Point(346, 266);
+            this.textBoxIdNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxIdNumber.Name = "textBoxIdNumber";
+            this.textBoxIdNumber.Size = new System.Drawing.Size(804, 32);
+            this.textBoxIdNumber.TabIndex = 39;
             // 
             // textBoxName
             // 
@@ -248,7 +248,7 @@ namespace room_booking_system
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "NewUserScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -266,7 +266,7 @@ namespace room_booking_system
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Button registerButton;
-        private System.Windows.Forms.TextBox textBoxPassport;
+        private System.Windows.Forms.TextBox textBoxIdNumber;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

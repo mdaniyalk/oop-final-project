@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using System.Threading.Tasks;
 
 namespace room_booking_system
 {
@@ -14,9 +16,9 @@ namespace room_booking_system
 
         private void validateButton_Click(object sender, EventArgs e)
         {
-            if (textBoxRID.Text != "")
+            if (textBoxBookId.Text != "")
             {
-                int reservationID = int.Parse(textBoxRID.Text);
+                int reservationID = int.Parse(textBoxBookId.Text);
                 int reservationNum = 0;
                 FunctionsClass functions = new FunctionsClass();
 
@@ -58,36 +60,31 @@ namespace room_booking_system
             }
         }
 
-        private void updateButton_Click(object sender, EventArgs e)
+        private async Task updateButton_ClickAsync(object sender, EventArgs e)
         {
-            int reservationID = int.Parse(textBoxRID.Text);
-            string sNumber = seatNumber.Text;
+            int reservationID = int.Parse(textBoxBookId.Text);
+            string roomName = newRoom.Text;
             string date = datePicker.Value.ToShortDateString();
 
             FunctionsClass functions = new FunctionsClass();
 
-            if (textBoxRID.Text != "" && seatNumber.Text != "")
+            if (textBoxBookId.Text != "" && newRoom.Text != "")
             {
-                if (functions.checkSeatTaken(date, sNumber) == 0)
+                string[] time = {"00", "01", "02"};
+                for (int i = 0; i< 3; i++)
                 {
-                    new PopupMessage("Sorry, The expected seat is already reserved on that day!").ShowDialog();
-                }
-                else
-                {
-                    try
+                    int cond = await functions.checkRoomTaken(date, roomName, time[i];
+                    if (cond == 1)
                     {
-                        SqlConnection connection = new SqlConnection(functions.connectionString);
-                        string query2 = @"UPDATE ReservationTable SET Date = '" + date + "', SeatNumber= '" + sNumber + "' WHERE ReservationID = '" + reservationID + "'";
-                        SqlCommand command = new SqlCommand(query2, connection);
-                        connection.Open();
-                        command.ExecuteNonQuery();
-                        new PopupMessage("Reservation Reschedule Success!").ShowDialog();
+                        functions.rescheduleRoom(reservationID, date, roomName, time[i]);
+                        new PopupMessage("Reschedule success!").ShowDialog();
                     }
-                    catch (Exception ex)
+                    else if (cond == 0 && i == 2) 
                     {
-                        new PopupMessage("Reservation Reschedule Error!" + ex).ShowDialog();
+                        new PopupMessage("Sorry, The expected room is already reserved on that day!").ShowDialog();
                     }
                 }
+                
             }
             else
             {

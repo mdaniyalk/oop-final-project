@@ -30,22 +30,22 @@ namespace room_booking_system
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewBookScreen));
-            this.textBoxPassport = new System.Windows.Forms.TextBox();
+            this.textBoxIdRoom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
             this.refreshAllButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBoxPassport
+            // textBoxIdRoom
             // 
-            this.textBoxPassport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxIdRoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassport.Location = new System.Drawing.Point(204, 54);
-            this.textBoxPassport.Margin = new System.Windows.Forms.Padding(6);
-            this.textBoxPassport.Name = "textBoxPassport";
-            this.textBoxPassport.Size = new System.Drawing.Size(956, 32);
-            this.textBoxPassport.TabIndex = 17;
+            this.textBoxIdRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIdRoom.Location = new System.Drawing.Point(204, 54);
+            this.textBoxIdRoom.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxIdRoom.Name = "textBoxIdRoom";
+            this.textBoxIdRoom.Size = new System.Drawing.Size(956, 32);
+            this.textBoxIdRoom.TabIndex = 17;
             // 
             // label2
             // 
@@ -103,9 +103,9 @@ namespace room_booking_system
             this.ClientSize = new System.Drawing.Size(1202, 391);
             this.Controls.Add(this.refreshAllButton);
             this.Controls.Add(this.searchButton);
-            this.Controls.Add(this.textBoxPassport);
+            this.Controls.Add(this.textBoxIdRoom);
             this.Controls.Add(this.label2);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ViewBookScreen";
             this.Text = "View Bookings";
@@ -116,7 +116,7 @@ namespace room_booking_system
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxPassport;
+        private System.Windows.Forms.TextBox textBoxIdRoom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button refreshAllButton;

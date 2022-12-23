@@ -30,24 +30,24 @@ namespace room_booking_system
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CancelBookScreen));
-            this.textBoxRID = new System.Windows.Forms.TextBox();
+            this.textBoxBookId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBoxAgree = new System.Windows.Forms.CheckBox();
-            this.textBoxPassport = new System.Windows.Forms.TextBox();
+            this.textBoxIdNumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBoxRID
+            // textBoxBookId
             // 
-            this.textBoxRID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxBookId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxRID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRID.Location = new System.Drawing.Point(356, 75);
-            this.textBoxRID.Margin = new System.Windows.Forms.Padding(6);
-            this.textBoxRID.Name = "textBoxRID";
-            this.textBoxRID.Size = new System.Drawing.Size(804, 32);
-            this.textBoxRID.TabIndex = 9;
+            this.textBoxBookId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBookId.Location = new System.Drawing.Point(356, 75);
+            this.textBoxBookId.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxBookId.Name = "textBoxBookId";
+            this.textBoxBookId.Size = new System.Drawing.Size(804, 32);
+            this.textBoxBookId.TabIndex = 9;
             // 
             // label1
             // 
@@ -77,16 +77,16 @@ namespace room_booking_system
             this.checkBoxAgree.Text = "I understand that this process cannot be reversed.";
             this.checkBoxAgree.UseVisualStyleBackColor = true;
             // 
-            // textBoxPassport
+            // textBoxIdNumber
             // 
-            this.textBoxPassport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxIdNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassport.Location = new System.Drawing.Point(356, 167);
-            this.textBoxPassport.Margin = new System.Windows.Forms.Padding(6);
-            this.textBoxPassport.Name = "textBoxPassport";
-            this.textBoxPassport.Size = new System.Drawing.Size(804, 32);
-            this.textBoxPassport.TabIndex = 15;
+            this.textBoxIdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIdNumber.Location = new System.Drawing.Point(356, 167);
+            this.textBoxIdNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxIdNumber.Name = "textBoxIdNumber";
+            this.textBoxIdNumber.Size = new System.Drawing.Size(804, 32);
+            this.textBoxIdNumber.TabIndex = 15;
             // 
             // label2
             // 
@@ -126,10 +126,10 @@ namespace room_booking_system
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1202, 459);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.textBoxPassport);
+            this.Controls.Add(this.textBoxIdNumber);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBoxAgree);
-            this.Controls.Add(this.textBoxRID);
+            this.Controls.Add(this.textBoxBookId);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -142,10 +142,10 @@ namespace room_booking_system
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxRID;
+        private System.Windows.Forms.TextBox textBoxBookId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBoxAgree;
-        private System.Windows.Forms.TextBox textBoxPassport;
+        private System.Windows.Forms.TextBox textBoxIdNumber;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cancelButton;
     }

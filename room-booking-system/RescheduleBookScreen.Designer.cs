@@ -30,10 +30,10 @@ namespace room_booking_system
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RescheduleBookScreen));
-            this.textBoxRID = new System.Windows.Forms.TextBox();
+            this.textBoxBookId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.datePicker = new System.Windows.Forms.DateTimePicker();
-            this.seatNumber = new System.Windows.Forms.ComboBox();
+            this.newRoom = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.validateButton = new System.Windows.Forms.Button();
@@ -41,16 +41,16 @@ namespace room_booking_system
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBoxRID
+            // textBoxBookId
             // 
-            this.textBoxRID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxBookId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxRID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRID.Location = new System.Drawing.Point(356, 62);
-            this.textBoxRID.Margin = new System.Windows.Forms.Padding(6);
-            this.textBoxRID.Name = "textBoxRID";
-            this.textBoxRID.Size = new System.Drawing.Size(804, 32);
-            this.textBoxRID.TabIndex = 11;
+            this.textBoxBookId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBookId.Location = new System.Drawing.Point(356, 62);
+            this.textBoxBookId.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxBookId.Name = "textBoxBookId";
+            this.textBoxBookId.Size = new System.Drawing.Size(804, 32);
+            this.textBoxBookId.TabIndex = 11;
             // 
             // label1
             // 
@@ -75,16 +75,16 @@ namespace room_booking_system
             this.datePicker.Size = new System.Drawing.Size(806, 32);
             this.datePicker.TabIndex = 20;
             // 
-            // seatNumber
+            // newRoom
             // 
-            this.seatNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.newRoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.seatNumber.DropDownHeight = 50;
-            this.seatNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.seatNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seatNumber.FormattingEnabled = true;
-            this.seatNumber.IntegralHeight = false;
-            this.seatNumber.Items.AddRange(new object[] {
+            this.newRoom.DropDownHeight = 50;
+            this.newRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.newRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newRoom.FormattingEnabled = true;
+            this.newRoom.IntegralHeight = false;
+            this.newRoom.Items.AddRange(new object[] {
             "A1",
             "A2",
             "A3",
@@ -121,11 +121,11 @@ namespace room_booking_system
             "F4",
             "F5",
             "F6"});
-            this.seatNumber.Location = new System.Drawing.Point(356, 392);
-            this.seatNumber.Margin = new System.Windows.Forms.Padding(6);
-            this.seatNumber.Name = "seatNumber";
-            this.seatNumber.Size = new System.Drawing.Size(804, 34);
-            this.seatNumber.TabIndex = 19;
+            this.newRoom.Location = new System.Drawing.Point(356, 392);
+            this.newRoom.Margin = new System.Windows.Forms.Padding(6);
+            this.newRoom.Name = "newRoom";
+            this.newRoom.Size = new System.Drawing.Size(804, 34);
+            this.newRoom.TabIndex = 19;
             // 
             // label7
             // 
@@ -185,7 +185,7 @@ namespace room_booking_system
             this.updateButton.TabIndex = 22;
             this.updateButton.Text = "Update Booking";
             this.updateButton.UseVisualStyleBackColor = false;
-            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            this.updateButton.Click += new System.EventHandler(this.updateButton_ClickAsync);
             // 
             // label2
             // 
@@ -209,12 +209,12 @@ namespace room_booking_system
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.validateButton);
             this.Controls.Add(this.datePicker);
-            this.Controls.Add(this.seatNumber);
+            this.Controls.Add(this.newRoom);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxRID);
+            this.Controls.Add(this.textBoxBookId);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "RescheduleBookScreen";
             this.Text = "Reschedule Booking";
@@ -225,10 +225,10 @@ namespace room_booking_system
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxRID;
+        private System.Windows.Forms.TextBox textBoxBookId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker datePicker;
-        private System.Windows.Forms.ComboBox seatNumber;
+        private System.Windows.Forms.ComboBox newRoom;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button validateButton;

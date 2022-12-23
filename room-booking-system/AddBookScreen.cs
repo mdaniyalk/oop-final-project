@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace room_booking_system
 {
@@ -10,6 +11,7 @@ namespace room_booking_system
         {
             InitializeComponent();
         }
+
 
         private void checkBoxClassA_Clicked(object sender, EventArgs e)
         {
@@ -29,33 +31,34 @@ namespace room_booking_system
             checkBoxClassB.CheckState = CheckState.Unchecked;
         }
 
-        private void submitButton_Click(object sender, EventArgs e)
+        private async void submitButton_Click(object sender, EventArgs e)
         {
-            if(textBoxName.Text!="" && textBoxPassport.Text!="" && destinationList.Text!="" && ticketType.Text!="" && seatNumber.Text!="" && (checkBoxClassA.CheckState==CheckState.Checked || checkBoxClassB.CheckState == CheckState.Checked || checkBoxClassC.CheckState == CheckState.Checked))
+            if(textBoxName.Text!="" && textBoxIDNumber.Text!="" && roomList.Text!="" && purpose.Text!="" && noPerson.Text!="" && (checkBoxClassA.CheckState==CheckState.Checked || checkBoxClassB.CheckState == CheckState.Checked || checkBoxClassC.CheckState == CheckState.Checked))
             {
                 string name = textBoxName.Text;
-                int pNumber = int.Parse(textBoxPassport.Text);
-                string destination = destinationList.Text;
+                int idNumber = int.Parse(textBoxIDNumber.Text);
+                string room = roomList.Text;
                 string date = datePicker.Value.ToShortDateString();
-                string tClass = "";
-                string tType = ticketType.Text;
-                string sNumber = seatNumber.Text;
+                string time = "";
+                string _purpose = purpose.Text;
+                string numPerson = noPerson.Text;
                 if (checkBoxClassA.Checked)
                 {
-                    tClass = "A";
+                    time = "00";
                 }
                 else if (checkBoxClassB.Checked)
                 {
-                    tClass = "B";
+                    time = "01";
                 }
                 else if (checkBoxClassC.Checked)
                 {
-                    tClass = "C";
+                    time = "02";
                 }
 
                 FunctionsClass functions = new FunctionsClass();
+                int cond = await functions.checkRoomTaken(date, room, time);
 
-                if(functions.checkSRoomTaken(date, sNumber) == 0)
+                if (cond == 0)
                 {
                     new PopupMessage("Sorry, The expected seat is already reserved on that day!").ShowDialog();
                 }
@@ -64,7 +67,7 @@ namespace room_booking_system
                     try
                     {
                         SqlConnection connection = new SqlConnection(functions.connectionString);
-                        string query = "INSERT INTO ReservationTable (Name, PassportID, Destination, Date, TicketClass, TicketType, SeatNumber) VALUES ('" + name + "','" + pNumber + "','" + destination + "','" + date + "','" + tClass + "','" + tType + "','" + sNumber + "')";
+                        string query = "INSERT INTO ReservationTable (Name, PassportID, room, Date, Ticketime, Ticke_purpose, noPerson) VALUES ('" + name + "','" + idNumber + "','" + room + "','" + date + "','" + time + "','" + _purpose + "','" + numPerson + "')";
                         SqlCommand command = new SqlCommand(query, connection);
                         connection.Open();
                         command.ExecuteNonQuery();
@@ -89,10 +92,10 @@ namespace room_booking_system
                     finally
                     {
                         textBoxName.Text = "";
-                        textBoxPassport.Text = "";
-                        destinationList.Text = "";
-                        ticketType.Text = "";
-                        seatNumber.Text = "";
+                        textBoxIDNumber.Text = "";
+                        roomList.Text = "";
+                        purpose.Text = "";
+                        noPerson.Text = "";
                         checkBoxClassA.CheckState = CheckState.Unchecked;
                         checkBoxClassB.CheckState = CheckState.Unchecked;
                         checkBoxClassC.CheckState = CheckState.Unchecked;

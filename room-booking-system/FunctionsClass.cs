@@ -14,7 +14,6 @@ namespace room_booking_system
 {
     class FunctionsClass
     {
-        // public string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\sayur\Documents\GitHub\airline-reservation-system\Database\ReservationDb.mdf;Integrated Security=True;Connect Timeout=30";
         public string apiUrl = "http://localhost:7260";
         
         public async Task<string> listRoom(string id)
@@ -69,6 +68,8 @@ namespace room_booking_system
                     return 1;
                 }
             }
+            else
+            { return 1; }
             
         }
 
@@ -129,6 +130,8 @@ namespace room_booking_system
 
             if (result.IsSuccessStatusCode)
             {
+                //var account = await client.GetStringAsync(apiUrl + "/auth/Login/username=" + uName + "&password=" + pass);
+                //Profile profile = JsonSerializer.Deserialize<Profile>(account);
                 return 1;
             }
             else

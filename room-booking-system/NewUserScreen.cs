@@ -14,7 +14,7 @@ namespace room_booking_system
         private void registerButton_Click(object sender, EventArgs e)
         {
             string name = textBoxName.Text;
-            string idNum = textBoxid.Text;
+            string idNum = textBoxIdNumber.Text;
             string uname = textBoxUsername.Text;
             string password = textBoxPassword.Text;
 
@@ -37,6 +37,10 @@ namespace room_booking_system
                         command.ExecuteNonQuery();
                         new PopupMessage("Account registered successfully! Please use username and password to login..").ShowDialog();
                         connection.Close();
+                        Profile profile = new Profile();
+                        profile.name = name;
+                        profile.idNumber = idNum;
+                        profile.username = uname;
                     }
                     catch (Exception ex)
                     {

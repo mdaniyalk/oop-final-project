@@ -42,11 +42,11 @@ namespace room_booking_system
             this.checkBoxClassB = new System.Windows.Forms.CheckBox();
             this.checkBoxClassC = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.destinationList = new System.Windows.Forms.ComboBox();
-            this.textBoxPassport = new System.Windows.Forms.TextBox();
-            this.seatNumber = new System.Windows.Forms.ComboBox();
+            this.roomList = new System.Windows.Forms.ComboBox();
+            this.textBoxIDNumber = new System.Windows.Forms.TextBox();
+            this.noPerson = new System.Windows.Forms.TextBox();
             this.datePicker = new System.Windows.Forms.DateTimePicker();
-            this.ticketType = new System.Windows.Forms.ComboBox();
+            this.purpose = new System.Windows.Forms.TextBox();
             this.submitButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -203,17 +203,18 @@ namespace room_booking_system
             this.panel1.Size = new System.Drawing.Size(808, 44);
             this.panel1.TabIndex = 11;
             // 
-            // destinationList
+            // roomList
             // 
-            this.destinationList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            // TODO: Change room
+            this.roomList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.destinationList.DropDownHeight = 50;
-            this.destinationList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.destinationList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.destinationList.FormattingEnabled = true;
-            this.destinationList.IntegralHeight = false;
-            this.destinationList.ItemHeight = 26;
-            this.destinationList.Items.AddRange(new object[] {
+            this.roomList.DropDownHeight = 50;
+            this.roomList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.roomList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomList.FormattingEnabled = true;
+            this.roomList.IntegralHeight = false;
+            this.roomList.ItemHeight = 26;
+            this.roomList.Items.AddRange(new object[] {
             "Afghanistan",
             "Albania",
             "Algeria",
@@ -410,74 +411,33 @@ namespace room_booking_system
             "Yemen",
             "Zambia",
             "Zimbabwe"});
-            this.destinationList.Location = new System.Drawing.Point(344, 198);
-            this.destinationList.Margin = new System.Windows.Forms.Padding(6);
-            this.destinationList.Name = "destinationList";
-            this.destinationList.Size = new System.Drawing.Size(804, 34);
-            this.destinationList.TabIndex = 12;
+            this.roomList.Location = new System.Drawing.Point(344, 198);
+            this.roomList.Margin = new System.Windows.Forms.Padding(6);
+            this.roomList.Name = "roomList";
+            this.roomList.Size = new System.Drawing.Size(804, 34);
+            this.roomList.TabIndex = 12;
             // 
-            // textBoxPassport
+            // textBoxIDNumber
             // 
-            this.textBoxPassport.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxIDNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassport.Location = new System.Drawing.Point(342, 117);
-            this.textBoxPassport.Margin = new System.Windows.Forms.Padding(6);
-            this.textBoxPassport.Name = "textBoxPassport";
-            this.textBoxPassport.Size = new System.Drawing.Size(804, 32);
-            this.textBoxPassport.TabIndex = 13;
+            this.textBoxIDNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIDNumber.Location = new System.Drawing.Point(342, 117);
+            this.textBoxIDNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.textBoxIDNumber.Name = "textBoxIDNumber";
+            this.textBoxIDNumber.Size = new System.Drawing.Size(804, 32);
+            this.textBoxIDNumber.TabIndex = 13;
             // 
-            // seatNumber
+            // noPerson
             // 
-            this.seatNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.noPerson.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.seatNumber.DropDownHeight = 50;
-            this.seatNumber.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.seatNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seatNumber.FormattingEnabled = true;
-            this.seatNumber.IntegralHeight = false;
-            this.seatNumber.Items.AddRange(new object[] {
-            "A1",
-            "A2",
-            "A3",
-            "A4",
-            "A5",
-            "A6",
-            "B1",
-            "B2",
-            "B3",
-            "B4",
-            "B5",
-            "B6",
-            "C1",
-            "C2",
-            "C3",
-            "C4",
-            "C5",
-            "C6",
-            "D1",
-            "D2",
-            "D3",
-            "D4",
-            "D5",
-            "D6",
-            "E1",
-            "E2",
-            "E3",
-            "E4",
-            "E5",
-            "E6",
-            "F1",
-            "F2",
-            "F3",
-            "F4",
-            "F5",
-            "F6"});
-            this.seatNumber.Location = new System.Drawing.Point(344, 508);
-            this.seatNumber.Margin = new System.Windows.Forms.Padding(6);
-            this.seatNumber.Name = "seatNumber";
-            this.seatNumber.Size = new System.Drawing.Size(804, 34);
-            this.seatNumber.TabIndex = 15;
+            this.noPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noPerson.Location = new System.Drawing.Point(344, 512);
+            this.noPerson.Margin = new System.Windows.Forms.Padding(6);
+            this.noPerson.Name = "noPerson";
+            this.noPerson.Size = new System.Drawing.Size(804, 32);
+            this.noPerson.TabIndex = 7;
             // 
             // datePicker
             // 
@@ -490,23 +450,16 @@ namespace room_booking_system
             this.datePicker.Size = new System.Drawing.Size(806, 32);
             this.datePicker.TabIndex = 16;
             // 
-            // ticketType
+            // purpose
             // 
-            this.ticketType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.purpose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ticketType.DropDownHeight = 50;
-            this.ticketType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ticketType.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ticketType.FormattingEnabled = true;
-            this.ticketType.IntegralHeight = false;
-            this.ticketType.Items.AddRange(new object[] {
-            "One Way",
-            "Two Way"});
-            this.ticketType.Location = new System.Drawing.Point(344, 433);
-            this.ticketType.Margin = new System.Windows.Forms.Padding(6);
-            this.ticketType.Name = "ticketType";
-            this.ticketType.Size = new System.Drawing.Size(804, 34);
-            this.ticketType.TabIndex = 17;
+            this.purpose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purpose.Location = new System.Drawing.Point(344, 433);
+            this.purpose.Margin = new System.Windows.Forms.Padding(6);
+            this.purpose.Name = "purpose";
+            this.purpose.Size = new System.Drawing.Size(804, 32);
+            this.purpose.TabIndex = 7;
             // 
             // submitButton
             // 
@@ -533,11 +486,11 @@ namespace room_booking_system
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1202, 675);
             this.Controls.Add(this.submitButton);
-            this.Controls.Add(this.ticketType);
+            this.Controls.Add(this.purpose);
             this.Controls.Add(this.datePicker);
-            this.Controls.Add(this.seatNumber);
-            this.Controls.Add(this.textBoxPassport);
-            this.Controls.Add(this.destinationList);
+            this.Controls.Add(this.noPerson);
+            this.Controls.Add(this.textBoxIDNumber);
+            this.Controls.Add(this.roomList);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label7);
@@ -547,7 +500,7 @@ namespace room_booking_system
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AddBookScreen";
             this.Text = "Add Booking";
@@ -572,11 +525,11 @@ namespace room_booking_system
         private System.Windows.Forms.CheckBox checkBoxClassB;
         private System.Windows.Forms.CheckBox checkBoxClassC;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox destinationList;
-        private System.Windows.Forms.TextBox textBoxPassport;
-        private System.Windows.Forms.ComboBox seatNumber;
+        private System.Windows.Forms.ComboBox roomList;
+        private System.Windows.Forms.TextBox textBoxIDNumber;
+        private System.Windows.Forms.TextBox noPerson;
         private System.Windows.Forms.DateTimePicker datePicker;
-        private System.Windows.Forms.ComboBox ticketType;
+        private System.Windows.Forms.TextBox purpose;
         private System.Windows.Forms.Button submitButton;
     }
 }
